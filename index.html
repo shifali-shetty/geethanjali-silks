@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geethanjali Silks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <div class="promo-banner">Shop for Rs 2099 and get 15% off up to Rs. 400!</div>
+    
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="header-container">
+            <div class="menu-icon">
+                <img src="menu (1).svg" alt="Menu">
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="logo-text">
+                <img src="RK Geethanjali Logo 14-4-2021 - Copy.png" alt="logo" class="logo">
+            </div>
+        <!-- Navigation links (web only) -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="all-silk-sarees.html">All Silk Sarees</a></li>
+                    <li class="dropdown">
+                    <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu">
+                        <li><a href="gown.html">Gown</a></li>
+                        <li><a href="lehenga-choli.html">Lehenga Choli</a></li>
+                        <li><a href="sarees.html">Saree </a></li>
+                        <li><a href="#">Dresses & Suits</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+      
+        <!-- Search & Cart icons -->
+            <div class="header-icons">
+            <img src="search (2).svg" alt="search" class="icons">
+            <img src="shop-bag.svg" alt="cart" class="icons">
+            </div>
+      </header>
+      
+      <!-- Mobile dropdown menu (hidden by default) -->
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">All Silk Sarees</a></li>
+          <li>
+            <a href="#">Shop</a>
+            <ul class="submenus">
+              <li><a href="gown.html">Gown</a></li>
+              <li><a href="lehenga-choli.html">Lehenga Choli</a></li>
+            </ul>
+          </li>
+          <li><a href="about-us.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+    <!-- Image Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide"><img src="img1.webp" alt="Image 1"></div>
+            <div class="carousel-slide"><img src="img2.webp" alt="Image 2"></div>
+            
+        </div>
+
+        <!-- Arrows -->
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+
+        <!-- Dots -->
+        <div class="carousel-dots">
+            <span class="dot" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+            <span class="dot" onclick="goToSlide(3)"></span>
+        </div>
+    </div>
+
+    <section class="category-section">
+        <h2 class="category-heading">CATEGORY</h2>
+        <div class="category-container">
+            <div class="category-item">
+                <a href="gown.html">
+                <img src="gown-5.webp" alt="Category 1">
+                <p>GOWN</p>
+            </a>
+            </div>
+            <div class="category-item">
+                <a href="lehenga-choli.html">
+                <img src="new-arrivals-1-1.webp" alt="Category 2">
+                <p>LEHENGA CHOLI</p>
+            </a>
+            </div>
+            <div class="category-item">
+                <a href="sarees.html">
+                <img src="saree2.webp" alt="Category 3">
+                <p>SAREES</p>
+            </a>
+            </div>
+            <div class="category-item">
+                <a href="#">
+                <img src="category-4.webp" alt="Category 4">
+                <p>DRESSES AND SUITS</p>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="shop-by-material-section">
+        <h2 class="category-heading">Shop by Material</h2>
+        <div class="shop-container">
+          <div class="box"><img src="kanchipuram-silk_2.png" alt="Material 1"></div>
+          <div class="box"><img src="raw-silk_2.png" alt="Material 2"></div>
+          <div class="box"><img src="georgette silk.png" alt="Material 3"></div>
+          <div class="box"><img src="kora silk.png" alt="Material 4"></div>
+          <div class="box"><img src="crepe-silk.png" alt="Material 5"></div>
+          <div class="box"><img src="katan silk.png" alt="Material 6"></div>
+          <div class="box"><img src="monga silk.png" alt="Material 7"></div>
+          <div class="box"><img src="tissue silk.png" alt="Material 8"></div>
+        </div>
+      </section>
+      
+    
+
+    <!-----------new-arrivals------------------->
+    
+    <section class="new-arrivals-section">
+        <h2 class="category-heading">NEW ARRIVALS</h2>
+        <a href="lehenga-choli.html">VIEW ALL</a>
+        <div class="new-arrivals-container">
+    
+            <!-- New Arrival 1 -->
+            <div class="arrival-item">
+                <div class="product-image-container">
+                   <a href="kamalkari-lehenga.html"> 
+                    <img src="new-arrivals-1-1.webp" class="product-image active" alt="New Arrival 1">
+                    <img src="new-arrivals-1-2.webp" class="product-image" alt="New Arrival 1 Alt">
+                    <img src="new-arrivals-1-3.webp" class="product-image" alt="New Arrival 1 Alt 2">
+                    <img src="new-arrivals-1-4.webp" class="product-image" alt="New Arrival 1 Alt 3">
+                </a>
+                    <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                    <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+                </div>
+    
+                <p class="product-name">Fully stitched kalamkari lehenga c...</p>
+                <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+    
+            <!-- New Arrival 2 -->
+            <div class="arrival-item">
+                <div class="product-image-container">
+                    <img src="new-arrivals-2-1.webp" class="product-image active" alt="New Arrival 2">
+                    <img src="new-arrivals-2-2.webp" class="product-image" alt="New Arrival 2 Alt">
+                    <img src="new-arrivals-2-3.webp" class="product-image" alt="New Arrival 2 Alt 2">
+                    <img src="new-arrivals-2-4.webp" class="product-image" alt="New Arrival 2 Alt 3">
+    
+                    <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                    <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+                </div>
+    
+                <p class="product-name">Yellow Fully stitched kalamkari le...</p>
+                <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+    
+            <!-- New Arrival 3 -->
+            <div class="arrival-item">
+                <div class="product-image-container">
+                    <img src="new-arrivals-3-1.webp" class="product-image active" alt="New Arrival 3">
+                    <img src="new-arrivals-3-2.webp" class="product-image" alt="New Arrival 3 Alt">
+                    <img src="new-arrivals-3-3.webp" class="product-image" alt="New Arrival 3 Alt 2">
+                    <img src="new-arrivals-3-4.webp" class="product-image" alt="New Arrival 3 Alt 3">
+    
+                    <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                    <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+                </div>
+    
+                <p class="product-name">Kamalkari mustard lehenga choli</p>
+                <p class="product-price">₹2360 <span class="old-price">₹4720</span> <span class="discount">| 50% OFF</span></p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+    
+            <!-- New Arrival 4 -->
+            <div class="arrival-item">
+                <div class="product-image-container">
+                    <img src="new-arrivals-4-1.webp" class="product-image active" alt="New Arrival 4">
+                    <img src="new-arrivals-4-2.webp" class="product-image" alt="New Arrival 4 Alt">
+                    <img src="new-arrivals-4-3.webp" class="product-image" alt="New Arrival 4 Alt 2">
+                    <img src="new-arrivals-4-4.webp" class="product-image" alt="New Arrival 4 Alt 3">
+    
+                    <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                    <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+                </div>
+    
+                <p class="product-name">Kamalkari Lehenga Choli</p>
+                <p class="product-price">₹2160 <span class="old-price">₹4320</span>  <span class="discount">| 50% OFF</span></p>
+                <button class="add-to-cart">ADD TO CART</button>
+            </div>
+    
+        </div>
+    </section>
+    
+ <!----------------shop by category-------->
+ <section class="shop-by-category">
+    <h2 class="category-heading">SHOP BY CATEGORY</h2>
+    <div class="shop-by-category-container">
+        <div class="category-card">
+            <img src="shop-by-category-1.webp" alt="Category 1">
+            <button class="category-btn">EXPLORE ETHNIC WEARS</button>
+        </div>
+        <div class="category-card">
+            <img src="shop-by-category-2.webp" alt="Category 2">
+            <button class="category-btn">Explore designer lehengas</button>
+        </div>
+        <div class="category-card">
+            <img src="shop-by-category-3.webp" alt="Category 3">
+            <button class="category-btn">explore best selling</button>
+        </div>
+    </div>
+</section>
+
+<!-----------in the spotlight------------------->
+    
+<section class="new-arrivals-section">
+    <h2 class="category-heading">IN THE SPOTLIGHT</h2>
+    <a href="lehenga-choli.html">VIEW ALL</a>
+    <div class="new-arrivals-container">
+
+        <!-- New Arrival 1 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="its1-1.webp" class="product-image active" alt="New Arrival 1">
+                <img src="its1-2.webp" class="product-image" alt="New Arrival 1 Alt">
+                <img src="its1-3.webp" class="product-image" alt="New Arrival 1 Alt 2">
+        
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Fully stitched kalamkari lehenga c...</p>
+            <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 2 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="its2-1.webp" class="product-image active" alt="New Arrival 2">
+                <img src="its2-2.webp" class="product-image" alt="New Arrival 2 Alt">
+                <img src="its2-3.webp" class="product-image" alt="New Arrival 2 Alt 2">
+                <img src="its2-4.webp" class="product-image" alt="New Arrival 2 Alt 3">
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Yellow Fully stitched kalamkari le...</p>
+            <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 3 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="its3-1.webp" class="product-image active" alt="New Arrival 3">
+                <img src="its3-2.webp" class="product-image" alt="New Arrival 3 Alt">
+                
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Kamalkari mustard lehenga choli</p>
+            <p class="product-price">₹2360 <span class="old-price">₹4720</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 4 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="its4-1.webp" class="product-image active" alt="New Arrival 4">
+                <img src="its4-2.webp" class="product-image" alt="New Arrival 4 Alt">
+               
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Kamalkari Lehenga Choli</p>
+            <p class="product-price">₹2160 <span class="old-price">₹4320</span>  <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+    </div>
+</section>
+   
+<!-----------all-products------------------->
+    
+<section class="new-arrivals-section">
+    <h2 class="category-heading">ALL PRODUCTS</h2>
+    <a href="gown.html">VIEW ALL</a>
+    <div class="new-arrivals-container">
+
+        <!-- New Arrival 1 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="new-arrivals-1-1.webp" class="product-image active" alt="New Arrival 1">
+                <img src="new-arrivals-1-2.webp" class="product-image" alt="New Arrival 1 Alt">
+                <img src="new-arrivals-1-3.webp" class="product-image" alt="New Arrival 1 Alt 2">
+                <img src="new-arrivals-1-4.webp" class="product-image" alt="New Arrival 1 Alt 3">
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Fully stitched kalamkari lehenga c...</p>
+            <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 2 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="new-arrivals-2-1.webp" class="product-image active" alt="New Arrival 2">
+                <img src="new-arrivals-2-2.webp" class="product-image" alt="New Arrival 2 Alt">
+                <img src="new-arrivals-2-3.webp" class="product-image" alt="New Arrival 2 Alt 2">
+                <img src="new-arrivals-2-4.webp" class="product-image" alt="New Arrival 2 Alt 3">
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Yellow Fully stitched kalamkari le...</p>
+            <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 3 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="new-arrivals-3-1.webp" class="product-image active" alt="New Arrival 3">
+                <img src="new-arrivals-3-2.webp" class="product-image" alt="New Arrival 3 Alt">
+                <img src="new-arrivals-3-3.webp" class="product-image" alt="New Arrival 3 Alt 2">
+                <img src="new-arrivals-3-4.webp" class="product-image" alt="New Arrival 3 Alt 3">
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Kamalkari mustard lehenga choli</p>
+            <p class="product-price">₹2360 <span class="old-price">₹4720</span> <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+        <!-- New Arrival 4 -->
+        <div class="arrival-item">
+            <div class="product-image-container">
+                <img src="new-arrivals-4-1.webp" class="product-image active" alt="New Arrival 4">
+                <img src="new-arrivals-4-2.webp" class="product-image" alt="New Arrival 4 Alt">
+                <img src="new-arrivals-4-3.webp" class="product-image" alt="New Arrival 4 Alt 2">
+                <img src="new-arrivals-4-4.webp" class="product-image" alt="New Arrival 4 Alt 3">
+
+                <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+                <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+            </div>
+
+            <p class="product-name">Kamalkari Lehenga Choli</p>
+            <p class="product-price">₹2160 <span class="old-price">₹4320</span>  <span class="discount">| 50% OFF</span></p>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+
+    </div>
+</section>
+
+<!-----------latest------------------->
+<div class="latest">
+    <div class="col-2">
+        <a href="lehenga-choli.html">
+        <img src="latest.webp" alt=""></a>
+    </div>
+    <div class="col-2">
+        <h1>Latest Collections at Geethanjali Silks</h1>
+        <p>Explore our newest arrivals, blending rich traditions with contemporary designs. Step into Geethanjali Silks and embrace the latest in style and heritage!</p>
+        <a href="#" id="btns">Shop Now</a>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer class="footer-sections">
+        <div class="footer-container">
+            <!-- Column 1: Logo and Description -->
+            <div class="footer-col">
+                <img src="RK Geethanjali Logo 14-4-2021 - Copy.png" alt="Logo" class="footer-logo">
+                <p>Your go-to store for the latest trends!</p>
+            </div>
+    
+            <!-- Column 2: Navigation Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#">Contact Us</a>
+            </div>
+    
+            <!-- Column 3: Categories -->
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <a href="#">New Arrivals</a>
+                <a href="#">Categories</a>
+                <a href="#">Latest</a>
+            </div>
+    
+            <!-- Column 4: Location & Social Icons -->
+            <div class="footer-col">
+                <h3>Location</h3>
+                <p>Geethanjali Theatre, GEETHANJALI ROAD, Thenkpete, Maruthi Veethika, Udupi, Karnataka 576101</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/geethanjalisilksudupi/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/geethanjali_silks/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class="footer-section">
+        <p>&copy; 2025 Geethanjali Silks. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

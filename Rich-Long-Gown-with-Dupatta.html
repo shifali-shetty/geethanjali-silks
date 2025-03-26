@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geethanjali Silks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="promo-banner">Shop for Rs 2099 and get 15% off up to Rs. 400!</div>
+    
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="header-container">
+            <div class="menu-icon">
+                <img src="menu (1).svg" alt="Menu">
+            </div>
+
+            <!-- Center: Logo -->
+            <div class="logo-text">
+                <img src="RK Geethanjali Logo 14-4-2021 - Copy.png" alt="logo" class="logo">
+            </div>
+        <!-- Navigation links (web only) -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="all-silk-sarees.html">All Silk Sarees</a></li>
+                <li class="dropdown">
+                <a href="#">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                <ul class="submenu">
+                    <li><a href="gown.html">Gown</a></li>
+                    <li><a href="lehenga-choli.html">Lehenga Choli</a></li>
+                    <li><a href="sarees.html">Saree </a></li>
+                    <li><a href="#">Dresses & Suits</a></li>
+                  </ul>
+                </li>
+                <li><a href="about-us.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      
+        <!-- Search & Cart icons -->
+            <div class="header-icons">
+            <img src="search (2).svg" alt="search" class="icons">
+            <img src="shop-bag.svg" alt="cart" class="icons">
+            </div>
+      </header>
+      
+      <!-- Mobile dropdown menu (hidden by default) -->
+      <div class="mobile-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">All Silk Sarees</a></li>
+          <li>
+            <a href="#">Shop</a>
+            <ul class="submenu">
+              <li><a href="#">Women's Wear</a></li>
+              <li><a href="#">Men's Wear</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+   
+    <div class="gown-container">
+
+        <!-- Left: Small images in 6 rows -->
+        <div class="gown-small-images">
+            <img src="g1.jpeg" alt="Gown Image 1" class="gown-small-img" onclick="changeGownImage('g1.jpeg')">
+            <img src="g2.webp" alt="Gown Image 2" class="gown-small-img" onclick="changeGownImage('g2.webp')">
+            <img src="g3.webp" alt="Gown Image 3" class="gown-small-img" onclick="changeGownImage('g3.webp')">
+            <img src="g4.webp" alt="Gown Image 4" class="gown-small-img" onclick="changeGownImage('g4.webp')">
+            <img src="g5.webp" alt="Gown Image 5" class="gown-small-img" onclick="changeGownImage('g5.webp')">
+            <img src="g6.webp" alt="Gown Image 6" class="gown-small-img" onclick="changeGownImage('g6.webp')">
+        </div>
+    
+        <!-- Center: Big active image -->
+        <div class="gown-main-image">
+            <img src="gown-1.webp" alt="Active Gown Image" id="gown-active-img">
+            <div class="gown-buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="add-to-cart">Buy Now</button>
+            </div>
+        </div>
+    
+        <!-- Right: Gown description -->
+        <div class="gown-details">
+            <h2>Elegant Kalamkari Gown</h2>
+            <p>₹2499 <span class="gown-old-price">₹5000</span> <span class="gown-discount">| 50% OFF</span></p>
+            <p>Beautiful, fully stitched kalamkari gown with intricate designs. Perfect for festive occasions.</p><br>
+            <p>Name : Women Embroidered Georgette Anarkali Gown With Dupatta
+
+                Fabric : Georgette
+                <br>
+                Sleeve Length : Three-Quarter Sleeves
+                <br>
+                Pattern : Printed
+                <br>
+                Net Quantity (N) : 1
+                <br>
+                Sizes :  
+                
+                M (Bust Size : 38 in, Length Size: 56 in, Waist Size: 28 in, Hip Size: 42 in, Shoulder Size: 14 in)
+                <br>
+                L (Bust Size : 40 in, Length Size: 56 in, Waist Size: 30 in, Hip Size: 44 in, Shoulder Size: 15 in)
+                <br>
+                XL (Bust Size : 42 in, Length Size: 56 in, Waist Size: 32 in, Hip Size: 46 in, Shoulder Size: 16 in)
+                <br>
+                XXL (Bust Size : 44 in, Length Size: 56 in, Waist Size: 34 in, Hip Size: 48 in, Shoulder Size: 17 in)
+                <br>
+                 
+                
+                Women Embroidered Georgette Anarkali Gown With Dupatta
+                <br>
+                Country of Origin : India</p>
+
+                <div class="button-containers">
+                    <button class="btns primary" onclick="openCart()">Add to Cart</button>
+                    <a href="elegant-kalamkai-gown.html"
+                     class="btns secondary">Buy Now</a>
+                </div>
+        </div>
+    </div>
+
+    <div class="cart-overlay" onclick="closeCart()"></div>
+    <div class="cart-sidebar">
+        <span class="cart-close" onclick="closeCart()">✖</span>
+        <h2>Cart</h2>
+        <div class="cart-item">
+            <img src="gown-1.webp" alt="Product Image" class="cart-item-img">
+            <div class="cart-item-details">
+                <h3>Elegant Kalamkari Gown</h3>
+                <p>Size: M</p>
+                <div class="quality-price">
+                    <div class="quantity-controls">
+                        <button type="button" id="decrease-btn">-</button>
+                        <span id="cart-quantity">1</span>
+                        <button type="button" id="increase-btn">+</button>
+                    </div>
+                    <p>₹2499</p>
+                </div> 
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <p>Subtotal: ₹2499</p><br><br>
+            <button class="place-order">Place Order</button>
+        </div>
+    </div>
+
+    <section class="new-arrivals-section">
+        <h2 class="people-viewed">People also viewed</h2>
+        <div class="new-arrivals-container">
+
+    <!-- New Arrival 2 -->
+    <div class="arrival-item">
+        <div class="product-image-container">
+            <img src="gown-2.webp" class="product-image active" alt="New Arrival 2">
+            
+            <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+            <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+        </div>
+
+        <p class="product-name">Yellow Fully stitched kalamkari</p>
+        <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+
+    <!-- New Arrival 3 -->
+    <div class="arrival-item">
+        <div class="product-image-container">
+            <img src="gown-3.webp" class="product-image active" alt="New Arrival 3">
+
+
+            <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+            <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+        </div>
+
+        <p class="product-name">Kamalkari mustard lehenga choli</p>
+        <p class="product-price">₹2360 <span class="old-price">₹4720</span> <span class="discount">| 50% OFF</span></p>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+
+    <!-- New Arrival 4 -->
+    <div class="arrival-item">
+        <div class="product-image-container">
+            <img src="gown-4.webp" class="product-image active" alt="New Arrival 4">
+            
+            <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+            <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+        </div>
+
+        <p class="product-name">Kamalkari Lehenga Choli</p>
+        <p class="product-price">₹2160 <span class="old-price">₹4320</span>  <span class="discount">| 50% OFF</span></p>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    <div class="arrival-item">
+        <div class="product-image-container">
+            <img src="gown-5.webp" class="product-image active" alt="New Arrival 1">
+            
+    
+
+            <button class="arrow left" onclick="prevImage(this)">&#10094;</button>
+            <button class="arrow right" onclick="nextImage(this)">&#10095;</button>
+        </div>
+
+        <p class="product-name">Fully stitched kalamkari lehenga </p>
+        <p class="product-price">₹2499 <span class="old-price">₹5000</span> <span class="discount">| 50% OFF</span></p>
+        <button class="add-to-cart">ADD TO CART</button>
+    </div>
+    
+ </div>
+ </section>   
+    
+
+    <!-- Footer -->
+    <footer class="footer-sections">
+        <div class="footer-container">
+            <!-- Column 1: Logo and Description -->
+            <div class="footer-col">
+                <img src="RK Geethanjali Logo 14-4-2021 - Copy.png" alt="Logo" class="footer-logo">
+                <p>Your go-to store for the latest trends!</p>
+            </div>
+    
+            <!-- Column 2: Navigation Links -->
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="#">Contact Us</a>
+            </div>
+    
+            <!-- Column 3: Categories -->
+            <div class="footer-col">
+                <h3>Categories</h3>
+                <a href="lehenga-choli.html">New Arrivals</a>
+                <a href="#">Categories</a>
+                <a href="#">Latest</a>
+            </div>
+    
+            <!-- Column 4: Location & Social Icons -->
+            <div class="footer-col">
+                <h3>Location</h3>
+                <p>Geethanjali Theatre, GEETHANJALI ROAD, Thenkpete, Maruthi Veethika, Udupi, Karnataka 576101</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/geethanjalisilksudupi/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/geethanjali_silks/?hl=en"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <footer class="footer-section">
+        <p>&copy; 2025 Geethanjali Silks. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
